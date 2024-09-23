@@ -1,0 +1,87 @@
+<!--
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+     -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>register Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body>
+  <!-- 위 -->
+  <div class="bg-white h-14 border-b-2 border-gray-300 flex items-center text-xl">
+    <text class="ml-3 bg-gray-200 p-2 text-green-600 rounded-md font-bold">📗 BookMark  </text>
+    <text class="ml-auto -mr-10 font-bold"><a href="https://github.com/BBZJUN">Github Repo.</a></text>
+    <span class="ml-auto mr-5 flex font-bold">
+      <text class="ml-5"><a href="./register.html">SignUp</a></text>
+      <text class="ml-5">|</text>
+      <text class="ml-5">SignIn</text>
+    </span>
+  </div>
+
+
+  <!-- 가운데 -->
+  <div class="text-4xl text-center mt-10 font-bold">Sign Up</div>
+  
+  
+  <div class="flex justify-center">
+    <form class="mt-5">
+        <div class="flex flex-col mt-3">
+          <label for="nickname" class="mb-2 text-gray-700 font-bold">Nickname</label>
+          <input
+            id="nickname"
+            type="text"
+            placeholder="nickname..."
+            class="border border-gray-300 p-2 rounded w-96"
+          >
+        </div>
+        <div class="flex flex-col mt-4">
+          <label for="email" class="mb-2 text-gray-700 font-bold">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="email..."
+            class="border border-gray-300 p-2 rounded  w-96"
+          >
+        </div>
+        <div class="flex flex-col mt-4">
+          <label for="password" class="mb-2 text-gray-700 font-bold">Password</label>
+          <input
+            id="password"
+            type="password"
+            placeholder="password..."
+            class="border border-gray-300 p-2 rounded  w-96"
+          >
+        </div>
+        <div class="flex flex-col mt-4">
+          <label for="password confirm" class="mb-2 text-gray-700 font-bold">Password Confirm</label>
+          <input
+            id="password confirm"
+            type="password"
+            placeholder="password confirm..."
+            class="border border-gray-300 p-2 rounded  w-96"
+          >
+        </div>
+        <div class="flex justify-center">
+          <button class="mt-4 btn btn-primary normal-case bg-gray-200 w-64 h-11 mb-3 font-bold">
+            <a href="./index.html">
+            Register
+            </a>
+          </button>
+        </div>
+      </form>
+  </div>
+ 
+
+
+</body>
+
+</html>

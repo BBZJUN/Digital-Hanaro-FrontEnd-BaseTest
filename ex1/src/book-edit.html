@@ -1,0 +1,76 @@
+<!--
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+     -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>book-edit Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body class="flex flex-col h-screen">
+
+  <!-- 위 -->
+  <div class="flex-grow">
+    <div class="bg-white h-14 border-b-2 border-gray-300 flex items-center text-xl">
+      <text class="ml-3 bg-gray-200 p-2 text-green-600 rounded-md font-bold">📗 BookMark</text>
+      <text class="ml-auto -mr-10 font-bold"><a href="https://github.com/BBZJUN">Github Repo.</a></text>
+      <span class="ml-auto mr-5 flex font-bold">
+        <text class="ml-5"><a href="./register.html">SignUp</a></text>
+        <text class="ml-5">|</text>
+        <text class="ml-5">SignIn</text>
+      </span>
+    </div>
+
+
+    <!-- 왼 -->
+    <div>
+        <div class="bg-gray-300 w-64 p-5 top-16 left-0 fixed rounded-lg h-full">
+          <div class="border-2 border-blue-500 p-4">
+            <div class="flex justify-center">
+        <div class="flex justify-center mb-2">
+            <input  
+            class="bg-white h-8 w-48 rounded-lg font-bold text-black pl-4 placeholder-black"
+            placeholder="http://naver.com"
+            >
+            </input>
+        </div>
+        </div>
+        <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" value="" id="" />
+            <label class="form-check-label font-bold text-sm" for=""> 이동 시 자동 삭제 </label>
+        </div>
+        <div class="flex justify-end">
+            <div class="w-12 h-8 bg-white rounded-lg flex justify-center items-center mr-3">
+            <img class="h-5" src="../image/undo.png" alt="Undo">
+            </div>
+            <div class="w-12 bg-gray-100 rounded-lg flex justify-center items-center">
+            <img class="h-5" src="../image/paste.png">
+            </div>
+        </div>
+        </div>
+        <div class="flex justify-center font-bold">There is no marks.</div>
+        
+        </div>
+  </div>
+
+  <div class="mt-3">
+    <span class="ml-80"></span>
+    <button class="btn bg-blue-950 text-white pr-7 pl-7 pt-3 pb-3 rounded-xl text-xl">+Add Book</button>
+  </div>
+</div>
+  <!-- 아래 -->
+  <footer class="bg-white text-gray-500 text-center w-full py-1 mt-auto border-t-4 relative z-10">
+    <p class="flex items-center justify-center">© Hanaro 2024</p>
+  </footer>
+
+</body>
+
+</html>

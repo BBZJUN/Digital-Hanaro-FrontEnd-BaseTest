@@ -1,0 +1,21 @@
+{
+  "name": "ex1",
+  "version": "1.0.0",
+  "description": "ex1",
+  "main": "index.js",
+  "scripts": {
+    "test": "ex1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ex1"
+  },
+  "keywords": [
+    "ex1"
+  ],
+  "author": "BBZJUN",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}
